@@ -1,0 +1,48 @@
+.item {
+    border-bottom: 1px solid var(--color-border);
+    padding: 20px;
+    color: inherit;
+    background: white;
+    height: 450px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    .link {
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    h3 {
+        text-align: right;
+        font-family: var(--primary-font);
+        color: var(--third-color);
+        font-size: 35px;
+    }
+
+    .content {
+        width: 80%;
+        padding: 40px;
+        p {
+            color: var(--fourth-color);
+        }
+    }
+
+    h2 {
+        font-family: var(--primary-font);
+        color: var(--main-color);
+        margin-top: 0px;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 35px;
+        text-decoration: none;
+    }
+}

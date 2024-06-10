@@ -1,0 +1,49 @@
+.wrapper {
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    // text-align: center;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputcontainer {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 70%; 
+    // background-color: black;
+
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Align labels to the left */
+    width: 100%; /* Full width for consistent alignment */
+  }
+
+.buttonPrimary {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #bebebe;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonSecondary {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: hsl(0, 56%, 60%);
+    text-align: center;
+    cursor: pointer;
+}

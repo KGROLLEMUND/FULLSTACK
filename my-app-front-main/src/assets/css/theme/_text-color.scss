@@ -1,0 +1,9 @@
+.text {
+    &__white {
+        color: white;
+    }
+
+    &__primary {
+        color: var(--main-color);
+    }
+}

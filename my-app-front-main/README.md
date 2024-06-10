@@ -1,0 +1,22 @@
+- utiliser le service fetchGraphql sur la home
+- Utiliser le fetchGraphql sur l'affichage d'un article -> blog -> [id] -> page.js
+- Si le registerUser est prêt en back end => appliquer sur la home 
+    -> Créer une page register 
+    -> Implémenter un formulaire (composants Button, Input, Form etc...)
+    -> Récupérer le token
+
+- Grille d'articles : 
+    -> Composant PostItem (intégration html / css)
+    -> À checker composant GridPosts (grid)
+    -> Load more : 
+        -> Backend 
+            - Modifier query getArticles (passer des arguments / typer dans les schémas l'argument à passer)
+            - Tester avec le playground graphql
+        -> Frontend
+            - Utiliser les paramètres de la route pour relancer la query : ?limit=6 / 12 / etc...
+            - À faire ensemble : Créer une page /articles 
+                - Fetch tous les articles (en SSR)
+                - Utiliser le composant GridPosts 
+                - Passer filtres load more en Serverside 
+                - Repasser la homepage en Client side (le bouton loadmore va être déclenché c)
+                

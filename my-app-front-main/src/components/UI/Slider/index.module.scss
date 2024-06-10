@@ -1,0 +1,120 @@
+.wrapper {
+    margin: 50px auto;
+    position: relative;
+
+    &:after {
+        content: "";
+        border-radius: 200px;
+        background: var(--third-color);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 8%;
+        z-index: -1;
+    }
+}
+
+.slider__wrapper {
+    overflow: hidden;
+    border-radius: 200px;
+}
+
+.slider {
+    display: flex;
+    width: min-content;
+    position: relative;
+    transition: 0.3s all;
+}
+
+.slide {
+    width: 100%;
+    height: 500px;
+    background: lightgray;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.btn__nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: var(--third-color);
+    border: 1px solid white;
+    z-index: 999;
+    transition: 0.3s all;
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &:hover {
+        background: white;
+        border: 1px solid var(--third-color);
+
+        svg {
+            path {
+                transition: 0.3s all;
+                stroke: var(--third-color);
+            }
+        }
+    }
+
+    &.btn__left {
+        top: 50%;
+        left: -25px;
+    }
+
+    &.btn__right {
+        top: 50%;
+        right: -25px;
+    }
+}
+
+.navigation__dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6%;
+
+    .dots__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .dot__item {
+            &:hover {
+                button {
+                    background: var(--sixth-color);
+                }
+            }
+
+            &.active {
+                button {
+                    background: var(--sixth-color);
+                }
+            }
+
+            button {
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                border-radius: 100%;
+                background: white;
+                border: none;
+                cursor: pointer;
+                transition: 0.3s all;
+            }
+        }
+    }
+}

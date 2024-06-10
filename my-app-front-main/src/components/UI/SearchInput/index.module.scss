@@ -1,0 +1,48 @@
+.wrapper {
+    display: flex;
+    width: 150px;
+    background: var(--sixth-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    position: relative;
+    color: white;
+    border-radius: 20px;
+}
+
+.wrapper svg {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.wrapper input {
+    border: none;
+
+    &::placeholder {
+        color: var(--fourth-color);
+        font-size: 12px;
+    }
+}
+
+.wrapper input:focus {
+    outline: none;
+}
+
+.results {
+    position: absolute;
+    max-height: 150px;
+    overflow: scroll;
+    left: 0px;
+    left: 0px;
+    top: 50px;
+    background: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.results a {
+    color: inherit;
+}
+
+.results p {
+    font-size: 12px;
+}

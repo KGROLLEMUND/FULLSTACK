@@ -1,0 +1,41 @@
+.wrapper {
+    border: 2px solid black;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    // text-align: center;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.registerLink {
+    margin-top: 20px;
+}
+
+.buttonPrimary {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #bebebe;
+    text-align: center;
+    cursor: pointer;
+}
+.buttonSecondary {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: hsl(0, 56%, 60%);;
+    text-align: center;
+    cursor: pointer;
+}
+

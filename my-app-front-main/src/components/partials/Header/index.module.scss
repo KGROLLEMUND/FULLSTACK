@@ -1,0 +1,86 @@
+.header {
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+  
+      &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        background-color: white;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  
+    &__left {
+      width: 33.33%;
+    }
+  
+    &__right {
+      width: 33.33%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    &__center {
+      width: 100%;
+      text-align: center;
+    }
+  
+    &__social {
+      .social__wrapper {
+        display: flex;
+        align-items: center;
+  
+        .social__item {
+          padding: 0 20px;
+          position: relative;
+  
+          &:first-of-type {
+            &:before {
+              display: none;
+            }
+          }
+  
+          &:before {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 5px;
+            background-color: var(--secondary-color);
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  
+    &__right {
+      .loginButton,
+      .profileButton {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+  
+      .profileButton {
+        background-color: #008CBA; /* Blue */
+      }
+    }
+  }
+  

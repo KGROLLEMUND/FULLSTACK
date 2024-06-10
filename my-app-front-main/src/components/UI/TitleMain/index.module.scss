@@ -1,0 +1,22 @@
+.wrapper {
+    margin: 20px 0px;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+
+    &.white {
+        color: white;
+    }
+
+    &.underlined {
+        &:after {
+            content: "";
+            width: 150px;
+            height: 10px;
+            background: var(--main-color);
+            display: block;
+            margin: 20px 0px;
+        }
+    }
+}
